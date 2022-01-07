@@ -14,7 +14,7 @@ Notice that num is also included in the returned array.
 function arrayOfMultiples(num, len){
   for (let i = 0; i < len; i++) {
     console.log(i);
-      
+      rettetet
   }
 
 
