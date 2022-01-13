@@ -30,8 +30,34 @@ Notes
 All inputs are strings, no uppercases and all output must be strings.
 */
 
-function encrypt( /*args*/ ) {
+function encrypt(str) {
   //your code
+
+const arr = str.split('')
+arr.reverse();
+
+for (let i = 0; i < arr.length; i++) {
+
+  if (arr[i] == 'a') {
+    arr[i] = '0';
+  } 
+  if (arr[i] == 'e') {
+    arr[i] = '1';
+  } 
+  if (arr[i] == 'i') {
+    arr[i] = '2';
+  } 
+  if (arr[i] == 'o') {
+    arr[i] = '2';
+  } 
+  if (arr[i] == 'u') {
+    arr[i] = '3';
+  } 
 }
+const result = arr.join("") + 'aca';
+return result;
+
+}
+console.log(encrypt("banana"))
 
 exports.solution = encrypt;

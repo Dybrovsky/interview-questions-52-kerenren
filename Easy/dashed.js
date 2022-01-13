@@ -10,8 +10,22 @@ Notes
 A string can contain uppercase and lowercase vowels.
 */
 
-function dashed( /*args*/ ) {
+function dashed(str) {
   //your code
-}
+ let result = [];
+ let arr = str.split("");
+ 
+for (const letter of arr) {
 
+if (letter == "a") {
+  result.push(`-${letter}-`)
+  
+} else {
+  result.push(letter);
+  
+}
+}
+return result.join("");
+}
+console.log(dashed("dhdahdhdh"))
 exports.solution = dashed;
