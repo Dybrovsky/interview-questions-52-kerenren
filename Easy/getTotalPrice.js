@@ -41,8 +41,16 @@ There might be a floating point precision problem in here...
 */
 
 function getTotalPrice( /*args*/ ) {
-  //your code
-}
+    let total = 0;
+    for (const item of object) {
+      const {quantity, price} = item;
+     const totalPrice = quantity * price;
+     total += totalPrice;
+    }
+    
+    return total
+  };
+ 
 
 exports.solution = getTotalPrice;
 
